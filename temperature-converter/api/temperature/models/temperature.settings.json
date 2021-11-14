@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "temperatures",
+  "info": {
+    "name": "temperature"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "from": {
+      "type": "string",
+      "required": true
+    },
+    "multiplier": {
+      "type": "decimal",
+      "required": true
+    },
+    "to": {
+      "type": "string",
+      "required": true
+    },
+    "offset": {
+      "type": "float",
+      "required": true
+    },
+    "offset_add": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

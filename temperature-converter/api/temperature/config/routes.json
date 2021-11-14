@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/temperatures",
+      "handler": "temperature.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/temperatures/count",
+      "handler": "temperature.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/temperatures/:id",
+      "handler": "temperature.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/temperatures",
+      "handler": "temperature.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/temperatures/:id",
+      "handler": "temperature.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/temperatures/:id",
+      "handler": "temperature.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
